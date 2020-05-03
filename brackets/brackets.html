@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="brackets.js"></script>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Bracket Simulator</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="Description" lang="en" content="Eddie's Website">
+		<meta name="author" content="By Eddie Cai">
+		<meta name="robots" content="index, follow">
+
+		<link rel="stylesheet" href="../assets/css/styles.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="header">
+				<h1 class="header-heading" style="text-align:center;">Brackets</h1>
+			</div>
+
+			<div class="nav-bar">
+				<ul class="nav">
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="../football.html">College Football</a></li>
+				</ul>
+			</div>
+
+			<div class="content">
+				<div class="main">
+
+					<p>
+						<b> Brackets </b>
+					</p>
+
+					<button onclick="setupBrackets();"> Run simulation! </button>
+
+					<table id="results-table">
+						<tr>
+							<th> Player </th>
+							<th> 1st Place </th>
+							<th> 2nd Place </th>
+							<th> 3rd Place </th>
+							<th> 4th Place </th>
+							<th> 5th/6th Place </th>
+							<th> 7th/8th Place </th>
+						</tr>
+						<tr id="player-1">
+							<td> Player 1 </td>
+						</tr>
+						<tr id="player-2">
+							<td> Player 2 </td>
+						</tr>
+						<tr id="player-3">
+							<td> Player 3 </td>
+						</tr>
+						<tr id="player-4">
+							<td> Player 4 </td>
+						</tr>
+						<tr id="player-5">
+							<td> Player 5 </td>
+						</tr>
+						<tr id="player-6">
+							<td> Player 6 </td>
+						</tr>
+						<tr id="player-7">
+							<td> Player 7 </td>
+						</tr>
+						<tr id="player-8">
+							<td> Player 8 </td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
