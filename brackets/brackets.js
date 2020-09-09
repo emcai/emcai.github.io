@@ -53,7 +53,8 @@ function playBracket(seeding) {
 }
 
 var double = true; // True if double elimination
-// id is the bracket match location. toWin is number of games needed to win the set
+// id is the bracket match location
+//toWin is number of games needed to win the set
 function playSet(p1, p2, id, toWin, bracket) {
 	var p1Wins = 0;
 	var p2Wins = 0;
@@ -122,7 +123,7 @@ function playSet(p1, p2, id, toWin, bracket) {
 		bracket[13].push(winner);
 	} else if (id === 13) { //Losers Finals
 		loser.placing = 3;
-		winner.placing = 0; //Mark that this player came from Losers bracket, for Grands
+		winner.placing = 0; //Mark that this player came from Losers bracket
 		bracket[14].push(winner);
 	} else if (id === 14) { //Grands Set 1
 		if (loser.placing === 0) { //Tourney is over
@@ -147,6 +148,12 @@ function playGame(p1, p2) {
 function displayTable(placings) {
 	for (var i = 0; i < 8; i++) {
 		var idName = '#player-' + (i + 1).toString();
-		$(idName).append('<td> Hello world! </td>');
+		$(idName).not(':first').remove();
+		var td = '</td><td>';
+		var htmlString = '<td>' + (placings[7 - i][1]) + td
+			+ (placings[7 - i][2]) + td + (placings[7 - i][3]) + td
+			+ (placings[7 - i][4]) + td + (placings[7 - i][5]) + td 
+			+ (placings[7 - i][7]) + '</td>';
+		$(idName).append(htmlString);
 	}
 }
