@@ -66,8 +66,8 @@ th, td
 a:link { color: royalblue; }
 a:visited { color: purple; }
 a:focus { color: black; }
-a:hover { color: green; }
-a:active { color: red; }
+a:hover { color: gray; }
+a:active { color: white; }
 
 /* -----------------------
 Layout styles
@@ -142,7 +142,7 @@ Nav
 .nav a:hover
 {
 	color: white;
-	background-color: green;
+	background-color: gray;
 }
 
 .nav a:active
@@ -179,7 +179,7 @@ Single styles
 .btn:hover
 {
 	color: #fff !important;
-	background-color: green;
+	background-color: gray;
 }
 
 .btn:focus
